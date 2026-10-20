@@ -14,15 +14,15 @@ Desarrollar una aplicación sencilla que permita organizar y consultar la inform
 
 Integrantes
 
-Integrante 1: Yuri Sthefanny Obando Segura
+- Integrante 1: Yuri Sthefanny Obando Segura
 
-Integrante 2: Joselyn Nicole Ávila Sanchez
+- Integrante 2: Joselyn Nicole Ávila Sanchez
 
-Integrante 3: Merelyn Ginnette Estrada Barrantes
+- Integrante 3: Merelyn Ginnette Estrada Barrantes
 
-Integrante 4: Marlen Saldana Macho
+- Integrante 4: Marlen Saldana Macho
 
-Integrante 5: Jorge Alexander Zepeda Salmeron
+- Integrante 5: Jorge Alexander Zepeda Salmeron
 
 
 

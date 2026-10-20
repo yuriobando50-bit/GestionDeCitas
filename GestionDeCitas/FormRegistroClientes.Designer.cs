@@ -41,16 +41,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(16, 15);
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(128, -1);
             label1.Name = "label1";
-            label1.Size = new Size(109, 15);
+            label1.Size = new Size(193, 30);
             label1.TabIndex = 0;
             label1.Text = "Registro de clientes";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(19, 38);
+            label2.Location = new Point(22, 48);
             label2.Name = "label2";
             label2.Size = new Size(108, 15);
             label2.TabIndex = 1;
@@ -58,7 +59,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(133, 30);
+            textBox1.Location = new Point(149, 45);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(260, 23);
             textBox1.TabIndex = 2;
@@ -66,7 +67,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(22, 72);
+            label3.Location = new Point(22, 80);
             label3.Name = "label3";
             label3.Size = new Size(56, 15);
             label3.TabIndex = 3;
@@ -74,7 +75,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(134, 65);
+            textBox2.Location = new Point(149, 72);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(147, 23);
             textBox2.TabIndex = 4;
@@ -82,7 +83,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(25, 112);
+            label4.Location = new Point(22, 112);
             label4.Name = "label4";
             label4.Size = new Size(108, 15);
             label4.TabIndex = 5;

@@ -14,7 +14,8 @@ namespace GestionDeCitas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("El módulo de registro de clientes está listo.");
+            FormRegistroClientes formulario = new FormRegistroClientes();
+            formulario.ShowDialog();
         }
     }
 }

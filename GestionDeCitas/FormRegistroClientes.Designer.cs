@@ -30,12 +30,12 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txtnombre = new TextBox();
             label3 = new Label();
-            textBox2 = new TextBox();
+            txtTelefono = new TextBox();
             label4 = new Label();
-            textBox3 = new TextBox();
-            button1 = new Button();
+            txtCorreo = new TextBox();
+            btnRegistrar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -57,12 +57,12 @@
             label2.TabIndex = 1;
             label2.Text = "Nombre de cliente:";
             // 
-            // textBox1
+            // txtnombre
             // 
-            textBox1.Location = new Point(149, 45);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(260, 23);
-            textBox1.TabIndex = 2;
+            txtnombre.Location = new Point(149, 45);
+            txtnombre.Name = "txtnombre";
+            txtnombre.Size = new Size(260, 23);
+            txtnombre.TabIndex = 2;
             // 
             // label3
             // 
@@ -73,12 +73,12 @@
             label3.TabIndex = 3;
             label3.Text = "Telefono:";
             // 
-            // textBox2
+            // txtTelefono
             // 
-            textBox2.Location = new Point(149, 72);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(147, 23);
-            textBox2.TabIndex = 4;
+            txtTelefono.Location = new Point(149, 72);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(147, 23);
+            txtTelefono.TabIndex = 4;
             // 
             // label4
             // 
@@ -89,33 +89,34 @@
             label4.TabIndex = 5;
             label4.Text = "Correo electrónico:";
             // 
-            // textBox3
+            // txtCorreo
             // 
-            textBox3.Location = new Point(149, 104);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(261, 23);
-            textBox3.TabIndex = 6;
+            txtCorreo.Location = new Point(149, 104);
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.Size = new Size(261, 23);
+            txtCorreo.TabIndex = 6;
             // 
-            // button1
+            // btnRegistrar
             // 
-            button1.Location = new Point(235, 174);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 7;
-            button1.Text = "Registrar Cliente";
-            button1.UseVisualStyleBackColor = true;
+            btnRegistrar.Location = new Point(235, 174);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(75, 23);
+            btnRegistrar.TabIndex = 7;
+            btnRegistrar.Text = "Registrar Cliente";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
             // FormRegistroClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Controls.Add(textBox3);
+            Controls.Add(btnRegistrar);
+            Controls.Add(txtCorreo);
             Controls.Add(label4);
-            Controls.Add(textBox2);
+            Controls.Add(txtTelefono);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txtnombre);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FormRegistroClientes";
@@ -128,11 +129,11 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtnombre;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox txtTelefono;
         private Label label4;
-        private TextBox textBox3;
-        private Button button1;
+        private TextBox txtCorreo;
+        private Button btnRegistrar;
     }
 }

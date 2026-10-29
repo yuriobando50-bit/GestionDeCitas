@@ -32,8 +32,27 @@ namespace GestionDeCitas
                 return;
 
             }
+
+            //Validar que teléfono contenga entre 8 y 15 dígitos.
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(telefono,@"^\d{8,15}$")) 
+
+                {
+                MessageBox.Show("El teléfono debe contener entre 8 y 15 dígitos");
+                return;
+                }
+
+            //Validar que el formato del correo electrónico sea correcto.
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(correo, @"^[^@\s]+@[^@\s^]+\.[^@\s]+$")) 
+            {
+                MessageBox.Show("Correo inválido. Asegúrese de incluir @ y un dominio válido.");
+                return;
+            }
+
             // Aviso que se completo los datos solicitados.
             MessageBox.Show("Registro completado con éxito");
         }
+
     }
 }

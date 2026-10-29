@@ -5,11 +5,14 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace GestionDeCitas
 {
     public partial class FormRegistroClientes : Form
     {
+        //Lista que almacenara datos de los clientes en memoria
+        private List<string> clientes = new List<string>();
         public FormRegistroClientes()
         {
             InitializeComponent();
@@ -49,10 +52,22 @@ namespace GestionDeCitas
                 MessageBox.Show("Correo inválido. Asegúrese de incluir @ y un dominio válido.");
                 return;
             }
+            //Unir los datos del cliente en un solo texto para almacenar en lista.
+            string nuevoCliente = nombre + " | " + telefono + "|" + correo;
+            clientes.Add(nuevoCliente);
+
 
             // Aviso que se completo los datos solicitados.
             MessageBox.Show("Registro completado con éxito");
-        }
 
+            //Limpiar campos después del registro.
+            txtnombre.Clear();
+            txtTelefono.Clear();
+            txtCorreo.Clear();
+
+            txtnombre.Focus();
+
+        }
+         
     }
 }

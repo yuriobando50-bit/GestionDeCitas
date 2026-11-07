@@ -17,5 +17,11 @@ namespace GestionDeCitas
             FormRegistroClientes formulario = new FormRegistroClientes();
             formulario.ShowDialog();
         }
+
+        private void btnGestionCitas_Click(object sender, EventArgs e)
+        {
+            FormGestionCitas formulario = new FormGestionCitas();
+            formulario.ShowDialog();
+        }
     }
 }

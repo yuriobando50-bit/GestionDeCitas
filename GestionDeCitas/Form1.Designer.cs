@@ -31,6 +31,7 @@
             label1 = new Label();
             label2 = new Label();
             button1 = new Button();
+            btnGestionCitas = new Button();
             SuspendLayout();
             // 
             // label1
@@ -63,11 +64,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // btnGestionCitas
+            // 
+            btnGestionCitas.Location = new Point(134, 89);
+            btnGestionCitas.Name = "btnGestionCitas";
+            btnGestionCitas.Size = new Size(129, 23);
+            btnGestionCitas.TabIndex = 3;
+            btnGestionCitas.Text = "Gestion de Citas";
+            btnGestionCitas.UseVisualStyleBackColor = true;
+            btnGestionCitas.Click += btnGestionCitas_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnGestionCitas);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -82,5 +94,6 @@
         private Label label1;
         private Label label2;
         private Button button1;
+        private Button btnGestionCitas;
     }
 }
